@@ -1,0 +1,28 @@
+body {
+    border-top: 4px solid #00A8E6;
+}
+
+h2 {
+    color: #00A8E6;
+    font-size: 1.9em;
+}
+
+h3 {
+    color: #929498;
+    font-size: 1.4em;
+}
+
+.fa {
+    color: #85CC00;
+}
+
+.jumbotron .fa {
+    color: #FFF;
+}
+
+ul.speaker-list, ul.author-list
+{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
