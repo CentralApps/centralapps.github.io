@@ -22,8 +22,29 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
+  <body class="{{ page.class }}">
 
+    <div class="container" style="">
+        <div class="pull-left">
+            <a href="/"><img src="/assets/images/ca-revised.jpg" alt="CentralApps"></a>
+        </div>
+        <div class="container">
+
+        <div class="pull-right text-right">
+            <ul class="nav nav-pills pull-right" style="margin-top:25px;">
+              <li {% if page.active == 'web' %}class="active"{% endif %}><a href="/web">Web</a></li>
+              <li {% if page.active == 'mobile' %}class="active"{% endif %}><a href="/mobile">Mobile</a></li>
+              <li {% if page.active == 'integration' %}class="active"{% endif %}><a href="/integration">Integration</a></li>
+            </ul>
+            <br />
+            <ul class="nav nav-pills pull-right" style="margin-top:25px;">
+              <li {% if page.active == 'about' %}class="active"{% endif %}><a href="/about">About</a></li>
+              <li {% if page.active == 'projects' %}class="active"{% endif %}><a href="/projects">Projects</a></li>
+              <li {% if page.active == 'products' %}class="active"{% endif %}><a href="/products">Products</a></li>
+              <li {% if page.active == 'contact' %}class="active"{% endif %}><a href="/contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
 
     {{ content }}
 

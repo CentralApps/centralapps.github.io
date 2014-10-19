@@ -1,10 +1,27 @@
-body {
+body.main {
     border-top: 4px solid #00A8E6;
+    background-image: url(/assets/images/header-bg-opacity.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+
+}
+
+body.smaller {
+    border-top: 4px solid #00A8E6;
+    background-image: url(/assets/images/header-bg-opacity-smaller.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+
 }
 
 h2 {
     color: #00A8E6;
     font-size: 1.9em;
+}
+
+h2.alternative {
+    font-size: 2.0em;
+    margin-top: -15px;
 }
 
 h3 {
@@ -25,4 +42,13 @@ ul.speaker-list, ul.author-list
     list-style-type: none;
     padding: 0px;
     margin: 0px;
+}
+
+.nav-pills li a
+{
+    background: #FFF;
+}
+
+div.within-smaller {
+    margin-top: 90px;
 }
